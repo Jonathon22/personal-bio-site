@@ -1,11 +1,11 @@
 const projects = [ { 
   title: "Cool Project", 
-  screenshot: "http://gotoflashgames.com/files/file/033.jpg", 
+  screenshot: "", 
   description: "This is the best project", // A good project description includes 'the what', 'the why', and 'the how'.
   technologiesUsed: "HTML, CSS, Vanilla JavaScript, Version Control with Github",
   available: true,
   url: "https://github.com/Jonathon22/product-cards", // Towards the latter part of the class, you will learn how to host your projects and people will be able to view them live. Cool, right? Welp, until then, just use your GitHub link in this spot as well.
-  githubUrl: "https://github.com/nss-evening-cohort-8/js-part-deux"
+  githubUrl: "https://github.com/Jonathon22"
  } ];
 
 const printToDom = (divId, textToPrint ) => {
@@ -18,15 +18,18 @@ const createProjectCards = () => {
   let domString = '';
 
 for (let i=0; i < projects.length; i++) {
+
 domString += `<div class="project">`
-  domString += `<div class="project-title">${projects[i].title}</div>`
-  domString += `<div class="project-screenshot">${projects[i].screenshot}</div>`
-  domString += `<div class="project-description">${projects[i].description}</div>`
-  domString += `<div class="project-technologiesUsed">${projects[i].technologiesUsed}</div>`
-  domString += `<div class="project-available">${projects[i].available}</div>`
-  domString += `<div class="project-url">${projects[i].url}</div>`
-  domString += `<div class="project-githubUrl">${projects[i].githubUrl}</div>`
+domString +=    `<h1>${projects[i].title}</h1>`;
+domString +=    `<div><img src=${projects[i].screenshot}></div>`;
+domString +=    `<h2>Description: ${projects[i].description}</h2>`;
+domString +=    `<h3>Technologies Used: ${projects[i].technologiesUsed}</h3>`;
+domString +=    `<h3>${projects[i].available}</h3>`;
+domString +=    `<h4><a href=${projects[i].url}>Project</a</h4>`;
+domString +=    `<h5><a href="${projects[i].githubUrl}">GitHub</a></h5>`;
 domString += `</div>`
+
+
 }
 
 printToDom('projectsPage', domString);
@@ -36,3 +39,4 @@ printToDom('projectsPage', domString);
 }
 
 createProjectCards();
+console.log(projects[0].description)
