@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-
 }
 
 body {
@@ -13,13 +12,13 @@ body {
   color: #f5f5f7;
   text-emphasis-color: white;
 }
-.nav a{
+.nav a {
   display: inline-block;
   padding: 10px 15px;
   background-color: #141414;
   color: white;
 }
-.nav h2{
+.nav h2 {
   color: white;
   font-size: 20px;
   padding: 7.5px 10px 7.5 10px;
@@ -42,6 +41,7 @@ body {
 
 .fullPage {
   text-align: center;
+  /* background-image: url(personalBio.JPG); */
 }
 .nav {
   display: flex;
@@ -52,16 +52,14 @@ body {
 }
 
 #navLinks {
-  display: flex; 
+  display: flex;
   justify-content: space-evenly;
   list-style-type: none;
   padding: 7.5px 10px 7.5px 10px;
   border: 3px solid #1d1d1f;
   background-color: #2f2f2f;
- 
 }
 #navLinks h1 {
-  
   color: white;
   background-color: #2f2f2f;
 }
@@ -69,7 +67,7 @@ body {
   color: white;
   background-color: #2f2f2f;
 }
- 
+
 #navToTechnologies {
   color: white;
   background-color: #2f2f2f;
@@ -84,6 +82,10 @@ body {
   width: 300px;
   height: 400px;
   border: 3px solid black;
+  background-color: #b8bdb5;
+  color: #f5f5f7;
+  border-radius: 7px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
 }
 
 .bioPage p {
@@ -94,7 +96,6 @@ body {
   width: 100%;
   height: 100%;
 }
-
 
 .project h1 {
   border: 5px solid black;
@@ -108,6 +109,19 @@ body {
 
 #technologiesPage {
   padding: 10px;
-  background-color: #b8bdb5;
+  background-color: #141414;
   color: #f5f5f7;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  /* background-image: url(personalBio.JPG); */
+}
+
+#projectsPage {
+  background-image: url(personalBio.JPG);
+}
+
+.aboutImg {
+  height: 300px;
+  width: 300px;
+  border: 4px solid #0d449b;
+  margin: 2% 0 5% 2%;
 }
